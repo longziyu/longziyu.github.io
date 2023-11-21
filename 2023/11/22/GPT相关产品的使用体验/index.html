@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="前言这是一篇技术博客，主要关于OpenAI产品（GPT、DALLE等）的使用体验，目的是帮助读者更加合理有效地使用这些工具来提高工作效率。因为AI技术发展迅速，因此这篇文章会不断更新（在我有时间的时候，笑哭）。 背景自从ChatGPT产生后，各式各样的扩展GPT功能的插件和网站层出不穷，follow新技术对我而言是一种乐趣，我应该是最先开始使用ChatGPT的那一批人之一，是2022年下半年开始使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GPT相关产品的使用体验">
+<meta property="og:url" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/index.html">
+<meta property="og:site_name" content="孤星">
+<meta property="og:description" content="前言这是一篇技术博客，主要关于OpenAI产品（GPT、DALLE等）的使用体验，目的是帮助读者更加合理有效地使用这些工具来提高工作效率。因为AI技术发展迅速，因此这篇文章会不断更新（在我有时间的时候，笑哭）。 背景自从ChatGPT产生后，各式各样的扩展GPT功能的插件和网站层出不穷，follow新技术对我而言是一种乐趣，我应该是最先开始使用ChatGPT的那一批人之一，是2022年下半年开始使">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png">
+<meta property="article:published_time" content="2023-11-21T16:26:15.000Z">
+<meta property="article:modified_time" content="2023-11-21T17:27:19.474Z">
+<meta property="article:author" content="莫浩然">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png">
+
+<link rel="canonical" href="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>GPT相关产品的使用体验 | 孤星</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">孤星</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">世界微尘里，吾宁爱与憎</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="莫浩然">
+      <meta itemprop="description" content="这世界疯狂、冷漠、不近人情，但你要干净、温柔、一尘不染。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="孤星">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          GPT相关产品的使用体验
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-11-22 00:26:15 / 修改时间：01:27:19" itemprop="dateCreated datePublished" datetime="2023-11-22T00:26:15+08:00">2023-11-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">技术博客</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这是一篇技术博客，主要关于OpenAI产品（GPT、DALLE等）的使用体验，目的是帮助读者更加合理有效地使用这些工具来提高工作效率。因为AI技术发展迅速，因此这篇文章会不断更新（在我有时间的时候，笑哭）。</p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>自从ChatGPT产生后，各式各样的扩展GPT功能的插件和网站层出不穷，follow新技术对我而言是一种乐趣，我应该是最先开始使用ChatGPT的那一批人之一，是2022年下半年开始使用的，那时ChatGPT还没有大热，我轻松地用一些方法注册了ChatGPT账号并对他进行了初步体验，当时我只把它当作一个简单的对话工具，玩了一会便没有再深究，之后陆陆续续在朋友圈里看到大家都开始用了，ChatGPT也在短时间内火了起来。</p>
+ <span id="more"></span>
+<h1 id="使用ChatGPT的原则"><a href="#使用ChatGPT的原则" class="headerlink" title="使用ChatGPT的原则"></a>使用ChatGPT的原则</h1><h2 id="它只能做到你知道的事"><a href="#它只能做到你知道的事" class="headerlink" title="它只能做到你知道的事"></a>它只能做到你知道的事</h2><p>这是我最重点想强调的一个方面，我每次违背这条原则让ChatGPT办事，但它却做得很糟糕时，我便会在脑中一遍又一遍地加深对这条原则的印象。下面我详细解释这句话的含义。<br>我高中时候有信息技术课程，给我上课的老师是四川大学计算机系的博士毕业，他算是“半个”我编程的启蒙老师（因为当时学习的Visual Basic语言现在都快被淘汰了，而且我也没怎么认真听过这门课，甚至上课还在机房打游戏）。尽管如此，他上课时反复强调的一句话仍然让我印象深刻：<br>“你想让机器帮你做事，首先你要明白这件事该怎么做，如果你自己都不知道这件事该怎么做，那机器也不会做。”<br>读到这里，我想肯定有读者要开始反驳了：“我根本就不会写前端HTML代码啊，但不也通过提要求让ChatGPT生成了一个我想要的网页吗。它做到了我不知道的事啊。”但我想表达的“知道”并不是你明白具体的实现细节，而是你明白“制作一个这种风格的网页是可行的”。ChatGPT可以充当一个网络工程师弥补你缺乏前端开发经验的不足，但不能充当一个“设计师&#x2F;架构师”来自行设计。<br>我再举个例子，你写了一份<del>连你自己都看不懂的</del>代码，但你清楚这份代码的作用是在仿真环境中加载一辆小车开始自动驾驶，就像下面这样：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png" title="自动驾驶"></p>
+<p>不知何故它成功地运行了，车车在环境里跑了4趟，最后在终端输出了一串信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">红色</span><br><span class="line">蓝色</span><br><span class="line">红色</span><br><span class="line">红色</span><br></pre></td></tr></table></figure>
+<p>你清楚这些信息表示：车车有没有出车祸！但由于你的代码乱到自己都读不懂了，因此你并不明白红色和蓝色哪个表示车发生了碰撞，哪个表示车安全抵达了目的地。来不及了，快要到ddl了，你要赶快在表格里填上“车祸率”是多少，在这危急万分之时，你开始请教大神ChatGPT：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">请计算这次仿真中汽车的碰撞率</span><br></pre></td></tr></table></figure>
+<p>可是ChatGPT却输出了一些无关紧要的内容，你紧紧盯着它的输出面板，总是什么<code>“碰撞率=碰撞次数/总实验次数”</code>这般之乎者也的车轱辘话，似乎和你想要的答案毫无关系，<strong>甚至它都没有从25%和75%中猜一个</strong>！于是你开始觉得它胡言乱语，毫无帮助，进而觉得“ChatGPT不过如此，连这么简单的统计都做不好”。我只想说，拜托，你自己也不明白碰撞率怎么算的好吧？<br>总结一下上面的失败经验，归根结底就是提问违背了“只能做到你知道的事”的原则。想要让ChatGPT输出正确结果该怎么办呢？相想你这时已经完全不想动脑子了，你能想到什么最偷懒的办法呢？<br>答案是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">把你的代码发给ChatGPT，然后命令它：分析这份代码，并告诉我最后输出的红色和蓝色分别表示什么意思。</span><br></pre></td></tr></table></figure>
+<p><del>很好，你和我想到一块了，看来都喜欢偷懒</del> 让它成为你无情的代码分析机器吧！话说回来，为什么这样输入后，它就能输出正确结果了呢？<br>原因就在于，这时你明白了“想要知道出红色和蓝色哪个才是正常情况下的输出，需要分析我源代码的架构，答案藏在我的代码里”，你明白了这一点后，ChatGPT才能老老实实帮你做事。<br>因此，当你想让ChatGPT帮你完成任务时，记住：<strong>它只能做到你知道的事</strong>。</p>
+<h2 id="它对“调教”异常敏感"><a href="#它对“调教”异常敏感" class="headerlink" title="它对“调教”异常敏感"></a>它对“调教”异常敏感</h2><h2 id="Prompt应该尽可能地详细"><a href="#Prompt应该尽可能地详细" class="headerlink" title="Prompt应该尽可能地详细"></a>Prompt应该尽可能地详细</h2><h1 id="ChatGPT一些使用方法"><a href="#ChatGPT一些使用方法" class="headerlink" title="ChatGPT一些使用方法"></a>ChatGPT一些使用方法</h1><h1 id="衍生工具"><a href="#衍生工具" class="headerlink" title="衍生工具"></a>衍生工具</h1>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/11/05/%EF%BC%88%E4%B8%80%EF%BC%89%E4%BD%95%E5%A4%84%E5%88%AB%E7%A6%BB%E8%BF%9C%E8%99%91/" rel="prev" title="（一）何处别离远虑">
+      <i class="fa fa-chevron-left"></i> （一）何处别离远虑
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8ChatGPT%E7%9A%84%E5%8E%9F%E5%88%99"><span class="nav-number">3.</span> <span class="nav-text">使用ChatGPT的原则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%83%E5%8F%AA%E8%83%BD%E5%81%9A%E5%88%B0%E4%BD%A0%E7%9F%A5%E9%81%93%E7%9A%84%E4%BA%8B"><span class="nav-number">3.1.</span> <span class="nav-text">它只能做到你知道的事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%83%E5%AF%B9%E2%80%9C%E8%B0%83%E6%95%99%E2%80%9D%E5%BC%82%E5%B8%B8%E6%95%8F%E6%84%9F"><span class="nav-number">3.2.</span> <span class="nav-text">它对“调教”异常敏感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Prompt%E5%BA%94%E8%AF%A5%E5%B0%BD%E5%8F%AF%E8%83%BD%E5%9C%B0%E8%AF%A6%E7%BB%86"><span class="nav-number">3.3.</span> <span class="nav-text">Prompt应该尽可能地详细</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChatGPT%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">ChatGPT一些使用方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A1%8D%E7%94%9F%E5%B7%A5%E5%85%B7"><span class="nav-number">5.</span> <span class="nav-text">衍生工具</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">莫浩然</p>
+  <div class="site-description" itemprop="description">这世界疯狂、冷漠、不近人情，但你要干净、温柔、一尘不染。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">莫浩然</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">39k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">35 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
