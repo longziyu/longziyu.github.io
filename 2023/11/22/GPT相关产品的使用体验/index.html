@@ -28,8 +28,12 @@
 <meta property="og:description" content="前言这是一篇技术博客，主要关于OpenAI产品（GPT、DALLE等）的使用体验，目的是帮助读者更加合理有效地使用这些工具来提高工作效率。因为AI技术发展迅速，因此这篇文章会不断更新（在我有时间的时候，笑哭）。 背景自从ChatGPT产生后，各式各样的扩展GPT功能的插件和网站层出不穷，follow新技术对我而言是一种乐趣，我应该是最先开始使用ChatGPT的那一批人之一，是2022年下半年开始使">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF1.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF2.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF3.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF4.png">
 <meta property="article:published_time" content="2023-11-21T16:26:15.000Z">
-<meta property="article:modified_time" content="2023-11-21T17:27:19.474Z">
+<meta property="article:modified_time" content="2023-11-22T08:49:15.788Z">
 <meta property="article:author" content="莫浩然">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png">
@@ -182,7 +186,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-22 00:26:15 / 修改时间：01:27:19" itemprop="dateCreated datePublished" datetime="2023-11-22T00:26:15+08:00">2023-11-22</time>
+              <time title="创建时间：2023-11-22 00:26:15 / 修改时间：16:49:15" itemprop="dateCreated datePublished" datetime="2023-11-22T00:26:15+08:00">2023-11-22</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -200,14 +204,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>2.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -220,18 +224,33 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这是一篇技术博客，主要关于OpenAI产品（GPT、DALLE等）的使用体验，目的是帮助读者更加合理有效地使用这些工具来提高工作效率。因为AI技术发展迅速，因此这篇文章会不断更新（在我有时间的时候，笑哭）。</p>
-<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>自从ChatGPT产生后，各式各样的扩展GPT功能的插件和网站层出不穷，follow新技术对我而言是一种乐趣，我应该是最先开始使用ChatGPT的那一批人之一，是2022年下半年开始使用的，那时ChatGPT还没有大热，我轻松地用一些方法注册了ChatGPT账号并对他进行了初步体验，当时我只把它当作一个简单的对话工具，玩了一会便没有再深究，之后陆陆续续在朋友圈里看到大家都开始用了，ChatGPT也在短时间内火了起来。</p>
- <span id="more"></span>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>自从ChatGPT产生后，各式各样的扩展GPT功能的插件和网站层出不穷，follow新技术对我而言是一种乐趣，我应该是最先开始使用ChatGPT的那一批人之一，是2022年下半年开始使用的，那时ChatGPT还没有大热，我轻松地用一些方法注册了ChatGPT账号并对他进行了初步体验，当时我只把它当作一个简单的对话工具，玩了一会便没有再深究，之后陆陆续续在朋友圈里看到大家都开始用了，ChatGPT也在短时间内火了起来。<br> <span id="more"></span></p>
 <h1 id="使用ChatGPT的原则"><a href="#使用ChatGPT的原则" class="headerlink" title="使用ChatGPT的原则"></a>使用ChatGPT的原则</h1><h2 id="它只能做到你知道的事"><a href="#它只能做到你知道的事" class="headerlink" title="它只能做到你知道的事"></a>它只能做到你知道的事</h2><p>这是我最重点想强调的一个方面，我每次违背这条原则让ChatGPT办事，但它却做得很糟糕时，我便会在脑中一遍又一遍地加深对这条原则的印象。下面我详细解释这句话的含义。<br>我高中时候有信息技术课程，给我上课的老师是四川大学计算机系的博士毕业，他算是“半个”我编程的启蒙老师（因为当时学习的Visual Basic语言现在都快被淘汰了，而且我也没怎么认真听过这门课，甚至上课还在机房打游戏）。尽管如此，他上课时反复强调的一句话仍然让我印象深刻：<br>“你想让机器帮你做事，首先你要明白这件事该怎么做，如果你自己都不知道这件事该怎么做，那机器也不会做。”<br>读到这里，我想肯定有读者要开始反驳了：“我根本就不会写前端HTML代码啊，但不也通过提要求让ChatGPT生成了一个我想要的网页吗。它做到了我不知道的事啊。”但我想表达的“知道”并不是你明白具体的实现细节，而是你明白“制作一个这种风格的网页是可行的”。ChatGPT可以充当一个网络工程师弥补你缺乏前端开发经验的不足，但不能充当一个“设计师&#x2F;架构师”来自行设计。<br>我再举个例子，你写了一份<del>连你自己都看不懂的</del>代码，但你清楚这份代码的作用是在仿真环境中加载一辆小车开始自动驾驶，就像下面这样：</p>
 <p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png" title="自动驾驶"></p>
 <p>不知何故它成功地运行了，车车在环境里跑了4趟，最后在终端输出了一串信息：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">红色</span><br><span class="line">蓝色</span><br><span class="line">红色</span><br><span class="line">红色</span><br></pre></td></tr></table></figure>
 <p>你清楚这些信息表示：车车有没有出车祸！但由于你的代码乱到自己都读不懂了，因此你并不明白红色和蓝色哪个表示车发生了碰撞，哪个表示车安全抵达了目的地。来不及了，快要到ddl了，你要赶快在表格里填上“车祸率”是多少，在这危急万分之时，你开始请教大神ChatGPT：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">请计算这次仿真中汽车的碰撞率</span><br></pre></td></tr></table></figure>
-<p>可是ChatGPT却输出了一些无关紧要的内容，你紧紧盯着它的输出面板，总是什么<code>“碰撞率=碰撞次数/总实验次数”</code>这般之乎者也的车轱辘话，似乎和你想要的答案毫无关系，<strong>甚至它都没有从25%和75%中猜一个</strong>！于是你开始觉得它胡言乱语，毫无帮助，进而觉得“ChatGPT不过如此，连这么简单的统计都做不好”。我只想说，拜托，你自己也不明白碰撞率怎么算的好吧？<br>总结一下上面的失败经验，归根结底就是提问违背了“只能做到你知道的事”的原则。想要让ChatGPT输出正确结果该怎么办呢？相想你这时已经完全不想动脑子了，你能想到什么最偷懒的办法呢？<br>答案是：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">把你的代码发给ChatGPT，然后命令它：分析这份代码，并告诉我最后输出的红色和蓝色分别表示什么意思。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>请计算这次仿真中汽车的碰撞率</p>
+</blockquote>
+<p>可是ChatGPT却输出了一些无关紧要的内容，你紧紧盯着它的输出面板，总是什么<code>“碰撞率=碰撞次数/总实验次数”</code>这般之乎者也的车轱辘话，似乎和你想要的答案毫无关系，<strong>甚至它都没有从25%和75%中猜一个</strong>！于是你开始觉得它胡言乱语，毫无帮助，进而觉得“ChatGPT不过如此，连这么简单的统计都做不好”。我只想说，拜托，你自己也不明白碰撞率怎么算的好吧？<br>总结一下上面的失败经验，归根结底就是提问违背了“只能做到你知道的事”的原则。想要让ChatGPT输出正确结果该怎么办呢？想象你这时已经完全不想动脑子了，你能想到什么最偷懒的办法呢？<br>答案是：</p>
+<blockquote>
+<p>把你的代码发给ChatGPT，然后命令它：分析这份代码，并告诉我最后输出的红色和蓝色分别表示什么意思。</p>
+</blockquote>
 <p><del>很好，你和我想到一块了，看来都喜欢偷懒</del> 让它成为你无情的代码分析机器吧！话说回来，为什么这样输入后，它就能输出正确结果了呢？<br>原因就在于，这时你明白了“想要知道出红色和蓝色哪个才是正常情况下的输出，需要分析我源代码的架构，答案藏在我的代码里”，你明白了这一点后，ChatGPT才能老老实实帮你做事。<br>因此，当你想让ChatGPT帮你完成任务时，记住：<strong>它只能做到你知道的事</strong>。</p>
-<h2 id="它对“调教”异常敏感"><a href="#它对“调教”异常敏感" class="headerlink" title="它对“调教”异常敏感"></a>它对“调教”异常敏感</h2><h2 id="Prompt应该尽可能地详细"><a href="#Prompt应该尽可能地详细" class="headerlink" title="Prompt应该尽可能地详细"></a>Prompt应该尽可能地详细</h2><h1 id="ChatGPT一些使用方法"><a href="#ChatGPT一些使用方法" class="headerlink" title="ChatGPT一些使用方法"></a>ChatGPT一些使用方法</h1><h1 id="衍生工具"><a href="#衍生工具" class="headerlink" title="衍生工具"></a>衍生工具</h1>
+<h2 id="它更擅长英文"><a href="#它更擅长英文" class="headerlink" title="它更擅长英文"></a>它更擅长英文</h2><h2 id="它对“调教”异常敏感"><a href="#它对“调教”异常敏感" class="headerlink" title="它对“调教”异常敏感"></a>它对“调教”异常敏感</h2><h2 id="输出有一定的随机性"><a href="#输出有一定的随机性" class="headerlink" title="输出有一定的随机性"></a>输出有一定的随机性</h2><h2 id="Prompt应该尽可能地详细"><a href="#Prompt应该尽可能地详细" class="headerlink" title="Prompt应该尽可能地详细"></a>Prompt应该尽可能地详细</h2><h1 id="ChatGPT一些使用方法"><a href="#ChatGPT一些使用方法" class="headerlink" title="ChatGPT一些使用方法"></a>ChatGPT一些使用方法</h1><h1 id="衍生工具和插件"><a href="#衍生工具和插件" class="headerlink" title="衍生工具和插件"></a>衍生工具和插件</h1><h2 id="Consensus"><a href="#Consensus" class="headerlink" title="Consensus"></a>Consensus</h2><h2 id="GPTs"><a href="#GPTs" class="headerlink" title="GPTs"></a>GPTs</h2><h3 id="Designer-GPT"><a href="#Designer-GPT" class="headerlink" title="Designer GPT"></a>Designer GPT</h3><h2 id="ChatPDF"><a href="#ChatPDF" class="headerlink" title="ChatPDF"></a>ChatPDF</h2><p>ChatPDF是给不能使用GPT4的用户提供上传PDF文件并 读取的工具。它可以将PDF文件中的文字内容提取出来，并以聊天的形式展示给用户。通过这种方式，我们可以像浏览聊天记录一样阅读PDF文件，大大提高了阅读效率。此外，ChatPDF还具备强大的搜索功能，可以快速定位到我们需要的信息。<br>网址：<a target="_blank" rel="noopener" href="https://monica.im/webapp/doc-chat">https://monica.im/webapp/doc-chat</a><br>用它粗读论文效率极高，而且通过提问对话的方式来了解这篇论文比自己通读论文更快捷。<br>它可以提取整篇文章的主要内容，并提供一些你可能想要询问的问题：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF1.png" title="ChatPDF界面"></p>
+<p>你可以开门见山地询问这篇文章的创新点&#x2F;主要贡献到底是什么：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF2.png" title="ChatPDF贡献界面"></p>
+<p>当然，如果你读完论文或者看完解释后仍然对某方面有问题，也可以继续询问它：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF3.png" title="询问ChatPDF"></p>
+<p>我仍然强调这个观点：它的知识领域仅限于这篇PDF所包含的内容，而不会知道或推测作者想表达的其他信息。因此，如果你询问一些过于详细的、在论文中没有展示的细节，它也肯定无法做出准备的回答：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF4.png" title="继续询问ChatPDF"></p>
+<p>我们每天粗读的论文一定是比精读的论文更多，因此使用这个工具可以快速完成阅读任务。（当然，这个工具的非Plus会员仍然有每天上传文件数目的限制。）</p>
+<h2 id="ChatPPT"><a href="#ChatPPT" class="headerlink" title="ChatPPT"></a>ChatPPT</h2><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/667218468">提升工作效率的神器——ChatPDF插件</a></li>
+</ul>
+
     </div>
 
     
@@ -310,7 +329,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8ChatGPT%E7%9A%84%E5%8E%9F%E5%88%99"><span class="nav-number">3.</span> <span class="nav-text">使用ChatGPT的原则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%83%E5%8F%AA%E8%83%BD%E5%81%9A%E5%88%B0%E4%BD%A0%E7%9F%A5%E9%81%93%E7%9A%84%E4%BA%8B"><span class="nav-number">3.1.</span> <span class="nav-text">它只能做到你知道的事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%83%E5%AF%B9%E2%80%9C%E8%B0%83%E6%95%99%E2%80%9D%E5%BC%82%E5%B8%B8%E6%95%8F%E6%84%9F"><span class="nav-number">3.2.</span> <span class="nav-text">它对“调教”异常敏感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Prompt%E5%BA%94%E8%AF%A5%E5%B0%BD%E5%8F%AF%E8%83%BD%E5%9C%B0%E8%AF%A6%E7%BB%86"><span class="nav-number">3.3.</span> <span class="nav-text">Prompt应该尽可能地详细</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChatGPT%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">ChatGPT一些使用方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A1%8D%E7%94%9F%E5%B7%A5%E5%85%B7"><span class="nav-number">5.</span> <span class="nav-text">衍生工具</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8ChatGPT%E7%9A%84%E5%8E%9F%E5%88%99"><span class="nav-number">3.</span> <span class="nav-text">使用ChatGPT的原则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%83%E5%8F%AA%E8%83%BD%E5%81%9A%E5%88%B0%E4%BD%A0%E7%9F%A5%E9%81%93%E7%9A%84%E4%BA%8B"><span class="nav-number">3.1.</span> <span class="nav-text">它只能做到你知道的事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%83%E6%9B%B4%E6%93%85%E9%95%BF%E8%8B%B1%E6%96%87"><span class="nav-number">3.2.</span> <span class="nav-text">它更擅长英文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%83%E5%AF%B9%E2%80%9C%E8%B0%83%E6%95%99%E2%80%9D%E5%BC%82%E5%B8%B8%E6%95%8F%E6%84%9F"><span class="nav-number">3.3.</span> <span class="nav-text">它对“调教”异常敏感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%9C%89%E4%B8%80%E5%AE%9A%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%80%A7"><span class="nav-number">3.4.</span> <span class="nav-text">输出有一定的随机性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Prompt%E5%BA%94%E8%AF%A5%E5%B0%BD%E5%8F%AF%E8%83%BD%E5%9C%B0%E8%AF%A6%E7%BB%86"><span class="nav-number">3.5.</span> <span class="nav-text">Prompt应该尽可能地详细</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChatGPT%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">ChatGPT一些使用方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A1%8D%E7%94%9F%E5%B7%A5%E5%85%B7%E5%92%8C%E6%8F%92%E4%BB%B6"><span class="nav-number">5.</span> <span class="nav-text">衍生工具和插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Consensus"><span class="nav-number">5.1.</span> <span class="nav-text">Consensus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GPTs"><span class="nav-number">5.2.</span> <span class="nav-text">GPTs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Designer-GPT"><span class="nav-number">5.2.1.</span> <span class="nav-text">Designer GPT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ChatPDF"><span class="nav-number">5.3.</span> <span class="nav-text">ChatPDF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ChatPPT"><span class="nav-number">5.4.</span> <span class="nav-text">ChatPPT</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -377,7 +396,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">35 分钟</span>
+    <span title="站点阅读时长">36 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
