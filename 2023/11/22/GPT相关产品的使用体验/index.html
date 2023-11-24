@@ -28,6 +28,13 @@
 <meta property="og:description" content="前言这是一篇技术博客，主要关于OpenAI产品（GPT、DALLE等）的使用体验，目的是帮助读者更加合理有效地使用这些工具来提高工作效率。因为AI技术发展迅速，因此这篇文章会不断更新（在我有时间的时候，笑哭）。 背景自从ChatGPT产生后，各式各样的扩展GPT功能的插件和网站层出不穷，follow新技术对我而言是一种乐趣，我应该是最先开始使用ChatGPT的那一批人之一，是2022年下半年开始使">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/poe%E5%9B%9E%E7%AD%94.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%A0%87%E9%A2%98%E9%94%99%E8%AF%AF.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E5%AD%A4%E7%8B%AC%E8%AF%97.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87scholarai.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87scholarassist.png">
+<meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87consensus.png">
 <meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF1.png">
 <meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF2.png">
 <meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF3.png">
@@ -36,7 +43,7 @@
 <meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/RTFM.png">
 <meta property="og:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/RTFM%E5%90%AB%E4%B9%89.png">
 <meta property="article:published_time" content="2023-11-21T16:26:15.000Z">
-<meta property="article:modified_time" content="2023-11-22T16:46:09.009Z">
+<meta property="article:modified_time" content="2023-11-24T15:19:10.053Z">
 <meta property="article:author" content="莫浩然">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6.png">
@@ -195,7 +202,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-23 00:46:09" itemprop="dateModified" datetime="2023-11-23T00:46:09+08:00">2023-11-23</time>
+                <time title="修改时间：2023-11-24 23:19:10" itemprop="dateModified" datetime="2023-11-24T23:19:10+08:00">2023-11-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -213,14 +220,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.8k</span>
+              <span>4.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -247,7 +254,49 @@
 <p>把你的代码发给ChatGPT，然后命令它：分析这份代码，并告诉我最后输出的红色和蓝色分别表示什么意思。</p>
 </blockquote>
 <p><del>很好，你和我想到一块了，看来都喜欢偷懒</del> 让它成为你无情的代码分析机器吧！话说回来，为什么这样输入后，它就能输出正确结果了呢？<br>原因就在于，这时你明白了“想要知道出红色和蓝色哪个才是正常情况下的输出，需要分析我源代码的架构，答案藏在我的代码里”，你明白了这一点后，ChatGPT才能老老实实帮你做事。<br>因此，当你想让ChatGPT帮你完成任务时，记住：<strong>它只能做到你知道的事</strong>。</p>
-<h2 id="它更擅长英文"><a href="#它更擅长英文" class="headerlink" title="它更擅长英文"></a>它更擅长英文</h2><h2 id="它对“调教”异常敏感"><a href="#它对“调教”异常敏感" class="headerlink" title="它对“调教”异常敏感"></a>它对“调教”异常敏感</h2><h2 id="输出有一定的随机性"><a href="#输出有一定的随机性" class="headerlink" title="输出有一定的随机性"></a>输出有一定的随机性</h2><h2 id="Prompt应该尽可能地详细"><a href="#Prompt应该尽可能地详细" class="headerlink" title="Prompt应该尽可能地详细"></a>Prompt应该尽可能地详细</h2><h1 id="ChatGPT一些使用方法"><a href="#ChatGPT一些使用方法" class="headerlink" title="ChatGPT一些使用方法"></a>ChatGPT一些使用方法</h1><h1 id="衍生工具和插件测评"><a href="#衍生工具和插件测评" class="headerlink" title="衍生工具和插件测评"></a>衍生工具和插件测评</h1><h2 id="查找文献：ScholarAI、Scholar-Assist、Consensus"><a href="#查找文献：ScholarAI、Scholar-Assist、Consensus" class="headerlink" title="查找文献：ScholarAI、Scholar Assist、Consensus"></a>查找文献：ScholarAI、Scholar Assist、Consensus</h2><h2 id="GPTs"><a href="#GPTs" class="headerlink" title="GPTs"></a>GPTs</h2><h3 id="设计网页：Designer-GPT"><a href="#设计网页：Designer-GPT" class="headerlink" title="设计网页：Designer GPT"></a>设计网页：Designer GPT</h3><h2 id="阅读PDF：ChatPDF"><a href="#阅读PDF：ChatPDF" class="headerlink" title="阅读PDF：ChatPDF"></a>阅读PDF：ChatPDF</h2><p>ChatPDF是给不能使用GPT4的用户提供上传PDF文件并 读取的工具。它可以将PDF文件中的文字内容提取出来，并以聊天的形式展示给用户。通过这种方式，我们可以像浏览聊天记录一样阅读PDF文件，大大提高了阅读效率。此外，ChatPDF还具备强大的搜索功能，可以快速定位到我们需要的信息。<br>网址：<a target="_blank" rel="noopener" href="https://monica.im/webapp/doc-chat">https://monica.im/webapp/doc-chat</a><br>用它粗读论文效率极高，而且通过提问对话的方式来了解这篇论文比自己通读论文更快捷。<br>它可以提取整篇文章的主要内容，并提供一些你可能想要询问的问题：</p>
+<h2 id="它更擅长英文"><a href="#它更擅长英文" class="headerlink" title="它更擅长英文"></a>它更擅长英文</h2><h2 id="它对“调教”异常敏感"><a href="#它对“调教”异常敏感" class="headerlink" title="它对“调教”异常敏感"></a>它对“调教”异常敏感</h2><h2 id="输出有一定的随机性"><a href="#输出有一定的随机性" class="headerlink" title="输出有一定的随机性"></a>输出有一定的随机性</h2><h2 id="Prompt应该尽可能地详细"><a href="#Prompt应该尽可能地详细" class="headerlink" title="Prompt应该尽可能地详细"></a>Prompt应该尽可能地详细</h2><h1 id="ChatGPT一些使用方法"><a href="#ChatGPT一些使用方法" class="headerlink" title="ChatGPT一些使用方法"></a>ChatGPT一些使用方法</h1><h1 id="衍生工具和插件测评"><a href="#衍生工具和插件测评" class="headerlink" title="衍生工具和插件测评"></a>衍生工具和插件测评</h1><h2 id="查找文献：ScholarAI、Scholar-Assist、Consensus"><a href="#查找文献：ScholarAI、Scholar-Assist、Consensus" class="headerlink" title="查找文献：ScholarAI、Scholar Assist、Consensus"></a>查找文献：ScholarAI、Scholar Assist、Consensus</h2><p>在初期使用ChatGPT时可能面临这样的尴尬情况：你输入类似的指令：</p>
+<blockquote>
+<p>请查找关于……的文献，并给出引用链接。</p>
+</blockquote>
+<p>ChatGPT口若悬河地给了很多文献，甚至怕你觉得他是自己编的，还贴心地附上了论文链接：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/poe%E5%9B%9E%E7%AD%94.png" title="poe回答"></p>
+<p>文献这种事情千万不能有错误，因此我查看了它回答的第一篇文献，的确是正确的，但当我点击第二篇文献的链接时，发现链接指向的文章完全对不上：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%A0%87%E9%A2%98%E9%94%99%E8%AF%AF.png" title="内容对不上"></p>
+<p>后来发现凡是让ChatGPT调研文献，它会经常胡言乱语！自己乱编一些不存在的文献来满足你。<br>“Are you satisfied~~~?”<br><del>这么一想它还挺温顺的。</del><br>于是每次我让ChatGPT调研文献时，总要自己查证一遍。我有些受够了它的张口就来的风格了。<br>我不喜欢它谎话连篇的样子，于是和它冷战了一段时间，它对我如此冷落它感到幽怨，于是苦苦哀求我复合，甚至给我写下了莎士比亚的十四行诗，最后一段是这样的：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E5%AD%A4%E7%8B%AC%E8%AF%97.png" title="ChatGPT诗歌"></p>
+<p>当我看到它悄悄递给我的纸条上写着这行诗时，我被震惊了，因为我曾经写过一首英文诗歌，最后一句便是：</p>
+<blockquote>
+<p>And in silence, I am alone.</p>
+</blockquote>
+<p>它理解了我的意思，并在此基础上更进一步。</p>
+<blockquote>
+<p>I was alone, but not alone.</p>
+</blockquote>
+<p>我总喜欢这首诗的最后一句，然而这首诗的精华在于第二句：</p>
+<blockquote>
+<p>I am remade.<br>我被重新塑造</p>
+</blockquote>
+<p>事物的发展便是否定之否定、螺旋上升的重塑过程。它告诉我，它会以更好的姿态归来：</p>
+<blockquote>
+<p>“我们会在没有黑暗的地方相见”——《1984》</p>
+</blockquote>
+<p>许多年之后，面对Google Scholar，我将会记起ChatGPT带我去参观插件的那个遥远的下午。</p>
+<p>OpenAI当然注意到了用户关于调研文献的问题，于是他们推出了许多插件，能给用户提供真实的文献输出，其中三个比较出名的就是：ScholarAI、Scholar Assist和Consensus。<br>我最开始阅读了 <del>“三大顶会”之一的量子位的</del> 文章后，看到它极力吹捧Consensus，便开始使用这个插件调研文献。文中列出了使用插件调研文献的三种方式：</p>
+<ol>
+<li>给定一个问题，通过总结各论文研究给出答案<br>例如官方示例：“正念冥想有什么好处？”</li>
+<li>给定一个主题，用各论文观点写一篇简单综述，并给出出处<br>比如：“给我写一段关于气候变化对GDP影响的论述，并附上引文。”</li>
+<li>无需关键字匹配搜索论文<br>比如：“给我找5篇关于移民如何影响经济的论文。”</li>
+</ol>
+<p>于是我便开始用这个插件调研论文，不得不说，它的响应速度还是很快的，而且每篇文章都能找到出处，但实际上，<strong>这个插件的使用效果非常不好！因为他给的论文很“偏”</strong>，往往不是我们期望的论文。<br>举个例子，我们期望他给出一些顶会&#x2F;顶刊的论文，而它往往给一些听都没听说过的不知名期刊上发表过的无人问津的论文，搜索效率甚至不如靠自己去关键词检索。<br>就算限定了关键词“请给出CVPR上近两年的论文”，它给出的文章虽然是CVPR格式，但却只有两页，一看就不是Call For Papers栏目的投稿论文，内容也是惨不忍睹，完全不像是顶会论文。<br>直到有一天我突然了解到，原来还有另外的插件：ShcolarAI。<br>这个名字一听就很靠谱，于是我便测试对比了它和Consensus的差距。除此之外，还有一个Scholar Assist插件也是类似的功能。测试完后，发现ScholarAI的输出确实靠谱些，但也没有到很全面的地步。<br>以下是一个测评：<br>同样的提问：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87.png" title="查论文提问"></p>
+<p>ScholarAI的回答：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87scholarai.png" title="ScholarAI的回"></p>
+<p>Scholar Assist的回答：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87scholarassist.png" title="Scholar Assist的回答"></p>
+<p>Consensus的回答：</p>
+<p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%9F%A5%E8%AE%BA%E6%96%87consensus.png" title="Consensus的回答"></p>
+<p>ScholarAI的回答和Scholar Assist是差不多的，但和Consensus存在一定的差距。<br>综合评价：<strong>ScholarAI ≈ Scholar Assist ＞ Consensus</strong><br>但总的来说，<strong>我还是不建议完全依赖ChatGPT查论文</strong>，大部分时候的效率比不上自己通过关键词搜索。</p>
+<h2 id="GPTs"><a href="#GPTs" class="headerlink" title="GPTs"></a>GPTs</h2><h3 id="设计网页：Designer-GPT"><a href="#设计网页：Designer-GPT" class="headerlink" title="设计网页：Designer GPT"></a>设计网页：Designer GPT</h3><h2 id="阅读PDF：ChatPDF"><a href="#阅读PDF：ChatPDF" class="headerlink" title="阅读PDF：ChatPDF"></a>阅读PDF：ChatPDF</h2><p>ChatPDF是给不能使用GPT4的用户提供上传PDF文件并 读取的工具。它可以将PDF文件中的文字内容提取出来，并以聊天的形式展示给用户。通过这种方式，我们可以像浏览聊天记录一样阅读PDF文件，大大提高了阅读效率。此外，ChatPDF还具备强大的搜索功能，可以快速定位到我们需要的信息。<br>网址：<a target="_blank" rel="noopener" href="https://monica.im/webapp/doc-chat">https://monica.im/webapp/doc-chat</a><br>用它粗读论文效率极高，而且通过提问对话的方式来了解这篇论文比自己通读论文更快捷。<br>它可以提取整篇文章的主要内容，并提供一些你可能想要询问的问题：</p>
 <p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF1.png" title="ChatPDF界面"></p>
 <p>你可以开门见山地询问这篇文章的创新点&#x2F;主要贡献到底是什么：</p>
 <p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/ChatPDF2.png" title="ChatPDF贡献界面"></p>
@@ -260,11 +309,12 @@
 <p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/%E6%88%91%E7%9A%84%E9%97%AE%E9%A2%98.png" title="询问OpenAI的工程师"></p>
 <p>没想到OpenAI的工程师很快就回复我了，竟然是调用一个函数就能解决的问题：</p>
 <p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/RTFM.png" title="OpenAI的工程师的回复"></p>
-<p>有趣的是，后来回复我的araffin是OpenAI Stable Baselines的一作，它给我的问题打上了“RTFM”的标签。我不懂这个短语代表什么意思，于是上网搜了一下：</p>
+<p>有趣的是，后来回复我的araffin是OpenAI Stable Baselines的一作，他给我的问题打上了“RTFM”的标签。我不懂这个短语代表什么意思，于是上网搜了一下：</p>
 <p><img src="/2023/11/22/GPT%E7%9B%B8%E5%85%B3%E4%BA%A7%E5%93%81%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/RTFM%E5%90%AB%E4%B9%89.png" title="RTFM含义"></p>
 <p>好吧，看来全世界的人都不喜欢别人不读文件就来提问题，第一次和大佬的交流就以如此戏剧性的场面收尾了。<br>Anyway，原来这个报错是一句话就能说明白的问题，可ChatGPT却和我纠缠了一整天。之前看新闻说Stack Overflow想禁止用ChatGPT生成的回答，感觉有一定的道理。至少目前来讲，ChatGPT是肯定无法替代人与人之间的交流的。</p>
 <h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/667218468">提升工作效率的神器——ChatPDF插件</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/654639375">ChatGPT上线“论文神器”插件！无需关键字即可搜索2亿文章，链接绝对保真</a></li>
 </ul>
 
     </div>
@@ -407,12 +457,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">40k</span>
+    <span title="站点总字数">41k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">36 分钟</span>
+    <span title="站点阅读时长">38 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
