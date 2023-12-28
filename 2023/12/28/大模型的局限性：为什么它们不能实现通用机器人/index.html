@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="我从小就受到历史文化的熏陶，对中国历史十分熟悉。从“1921年7月23日，在那个夏天凌晨，在嘉兴南湖的一艘红船上正泛着点点星光”到“百年恰风华，世纪正青春”，在重温党的历史同时，我也很荣幸和党一起成长。若要讲述我的入党初心，我会说：我一直在与时偕行，与党同行。 “十年饮冰，难凉热血。”我不断地学习文化知识，并且深知：传统的箭，始终是要射向未来的。我们学习的思想文化知识理应在当下有用武之地。">
+  <meta name="description" content="我想从我的视角来谈谈为什么大语言模型不能实现通用机器人，也许不太全面，但我想阐述尽可能关键的点。 大模型存在幻觉，这是难以完全解决的虽然大模型的涌现能力缺乏可解释性，但实际上至今人们也没有对人脑的思维能力做出完备的解释，因此我认为“可解释性”并不能作为大模型不能实现通用机器人的关键因素，然而，大模型的幻觉现在是制约其成为通用机器人的关键。 我们首先需要分清楚：通用机器人和人的区别是什么？我们希望通">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的入党初心">
-<meta property="og:url" content="http://example.com/2022/10/20/%E6%88%91%E7%9A%84%E5%85%A5%E5%85%9A%E5%88%9D%E5%BF%83/index.html">
+<meta property="og:title" content="大模型的局限性：为什么它们不能实现通用机器人">
+<meta property="og:url" content="http://example.com/2023/12/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%83%E4%BB%AC%E4%B8%8D%E8%83%BD%E5%AE%9E%E7%8E%B0%E9%80%9A%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA/index.html">
 <meta property="og:site_name" content="孤星">
-<meta property="og:description" content="我从小就受到历史文化的熏陶，对中国历史十分熟悉。从“1921年7月23日，在那个夏天凌晨，在嘉兴南湖的一艘红船上正泛着点点星光”到“百年恰风华，世纪正青春”，在重温党的历史同时，我也很荣幸和党一起成长。若要讲述我的入党初心，我会说：我一直在与时偕行，与党同行。 “十年饮冰，难凉热血。”我不断地学习文化知识，并且深知：传统的箭，始终是要射向未来的。我们学习的思想文化知识理应在当下有用武之地。">
+<meta property="og:description" content="我想从我的视角来谈谈为什么大语言模型不能实现通用机器人，也许不太全面，但我想阐述尽可能关键的点。 大模型存在幻觉，这是难以完全解决的虽然大模型的涌现能力缺乏可解释性，但实际上至今人们也没有对人脑的思维能力做出完备的解释，因此我认为“可解释性”并不能作为大模型不能实现通用机器人的关键因素，然而，大模型的幻觉现在是制约其成为通用机器人的关键。 我们首先需要分清楚：通用机器人和人的区别是什么？我们希望通">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-10-20T06:24:51.000Z">
-<meta property="article:modified_time" content="2023-10-03T06:39:32.972Z">
+<meta property="article:published_time" content="2023-12-28T13:55:00.000Z">
+<meta property="article:modified_time" content="2023-12-28T13:58:09.849Z">
 <meta property="article:author" content="莫浩然">
-<meta property="article:tag" content="入党">
+<meta property="article:tag" content="技术博客">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/10/20/%E6%88%91%E7%9A%84%E5%85%A5%E5%85%9A%E5%88%9D%E5%BF%83/">
+<link rel="canonical" href="http://example.com/2023/12/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%83%E4%BB%AC%E4%B8%8D%E8%83%BD%E5%AE%9E%E7%8E%B0%E9%80%9A%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>我的入党初心 | 孤星</title>
+  <title>大模型的局限性：为什么它们不能实现通用机器人 | 孤星</title>
   
 
 
@@ -157,7 +157,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/20/%E6%88%91%E7%9A%84%E5%85%A5%E5%85%9A%E5%88%9D%E5%BF%83/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%83%E4%BB%AC%E4%B8%8D%E8%83%BD%E5%AE%9E%E7%8E%B0%E9%80%9A%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -170,7 +170,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          我的入党初心
+          大模型的局限性：为什么它们不能实现通用机器人
         </h1>
 
         <div class="post-meta">
@@ -179,24 +179,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-10-20 14:24:51" itemprop="dateCreated datePublished" datetime="2022-10-20T14:24:51+08:00">2022-10-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-03 14:39:32" itemprop="dateModified" datetime="2023-10-03T14:39:32+08:00">2023-10-03</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">生活感悟</span></a>
-                </span>
+              <time title="创建时间：2023-12-28 21:55:00 / 修改时间：21:58:09" itemprop="dateCreated datePublished" datetime="2023-12-28T21:55:00+08:00">2023-12-28</time>
             </span>
 
           <br>
@@ -224,16 +209,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>我从小就受到历史文化的熏陶，对中国历史十分熟悉。从“1921年7月23日，在那个夏天凌晨，在嘉兴南湖的一艘红船上正泛着点点星光”到“百年恰风华，世纪正青春”，在重温党的历史同时，我也很荣幸和党一起成长。若要讲述我的入党初心，我会说：我一直在与时偕行，与党同行。</p>
-<p>“十年饮冰，难凉热血。”我不断地学习文化知识，并且深知：传统的箭，始终是要射向未来的。我们学习的思想文化知识理应在当下有用武之地。<br> <span id="more"></span><br>在小学阶段，我了解到党历史上无数仁人志士为了新中国的未来抛头颅、洒热血，“男儿何不带吴钩，收取关山五十州。”是志愿军战士的心声。刘胡兰、焦裕禄这些人民的榜样深深地留在了我的心中，耳濡目染着“天下兴亡，匹夫有责”“修身，齐家，治国，平天下”“为什么我的眼里常含泪水？因为我对这土地爱得深沉”……每天上课我都记得佩戴好红领巾，不知不觉间，我似乎隐约领略了这一方丝巾蕴含着的特殊意义。</p>
-<p>初中阶段，我担任了政治课代表，在政治课上系统学习了马克思主义、毛泽东思想、邓小平理论、“三个代表”重要思想、科学发展观等内容，对中国共产党有了更进一步的认识，爱国爱党这节课，我不曾落下半节。课余时间，我经常与政治老师交流，她教给我许多先进的思想和理论，规范和引导了我的思想。我想，这些书本上的内容不仅仅是冰冷的文字，更是掷地有声的人民宣言，它们给我、给社会、给国家指明了正确的发展道路。</p>
-<p>高中，我在代表青年的五月成功加入了中国共青团，在五四青年节那天庄严宣誓，在学校的会议厅聆听大学学长的入党故事……我在学校的诗歌朗诵会上，我听到了同学们朗诵梁启超的《少年中国说》里的内容：“纵有千古，横有八荒，前途似海，来日方长”，我想，我们青年一代应葆有这样的活力，心系国家和人民，不失其赤子之心。</p>
-<p>大学班团日活动期间，我参观了中共一大和二大会址，也从嘉兴的红船走到了毛泽东故居。移步换景间，我领略到了“胸怀千秋伟业，恰是百年风华。”参观结束后，我有感而发：</p>
-<p>“共产党是我们心中一面鲜明的旗帜。无数仁人志士在革命年代移山开道，他们让共产党的思想传到华夏神州，并向远方无限延伸。’岁月不居，时节如流’。如今的新青年，在新时代的康庄大道上发光发热，我们的视域无限、看到的光景不息，我们正在中国共产党的带领下建设一个美好的时代。”</p>
-<p>每次“星火培训班”结束后，我都会高唱《国际歌》：“英特纳雄纳尔，就一定要实现”。这是我们每位学员的心声，也是全世界无产阶级的心声。在上完马克思主义原理课后，我从头到尾读了一遍教材，当我合上书的那一刻，我突然被教材中的深刻思想所折服：这一瞬间，我似乎热泪盈眶了，我认识到这是如此正确的思想理论，美好的未来终将到来。</p>
-<p>当代青年应该以时代为己任，而中国共产党，就是中国人民和中华民族的先锋队。我在深入了解了党的具体情况后，更加坚定了自己入党的决心。我十分清楚当今青年的时代责任，希望“以萤烛之光增辉日月”，为国家、社会的发展尽自己的一份力。</p>
-<p>“我们的行动，是中国美好未来的先声。”我所追随的光，是“只是向上走”时远方的星光、是镰刀锤头挥舞时的亮光、是五星红旗冉冉升起时映照的阳光。</p>
-<p>夜晚我走在路上，看十里长街川流不息，贯穿万古的红于星夜中绽放。不禁感慨“萧瑟秋风今又是，换了人间。”那么何不以“自信人生二百年，会当水击三千里”的雄心壮志，努力奋斗去创造美好的未来呢？</p>
+        <p>我想从我的视角来谈谈为什么大语言模型不能实现通用机器人，也许不太全面，但我想阐述尽可能关键的点。</p>
+<h1 id="大模型存在幻觉，这是难以完全解决的"><a href="#大模型存在幻觉，这是难以完全解决的" class="headerlink" title="大模型存在幻觉，这是难以完全解决的"></a>大模型存在幻觉，这是难以完全解决的</h1><p>虽然大模型的涌现能力缺乏可解释性，但实际上至今人们也没有对人脑的思维能力做出完备的解释，因此我认为“可解释性”并不能作为大模型不能实现通用机器人的关键因素，然而，大模型的幻觉现在是制约其成为通用机器人的关键。</p>
+<p>我们首先需要分清楚：通用机器人和人的区别是什么？我们希望通用机器人是一种纯理性的、能够100%地预测自己行为产生影响的、听从人类指令的存在，这和人类存在一个重要的区别：人类可以允许类似的“幻觉”存在，但大模型不能，人可以时不时说一句胡话，但大模型用作机器人如果还说一些“胡话”可能会产生非常大的影响。只要这种幻觉问题没有完全得到解决，那么大模型就就很难作为通用机器人的基础模型。<br> <span id="more"></span></p>
+<h1 id="大模型存在数据依赖问题"><a href="#大模型存在数据依赖问题" class="headerlink" title="大模型存在数据依赖问题"></a>大模型存在数据依赖问题</h1><p>大模型的训练需要极多的数据才能达到很好的效果，这和人脑的机制是完全不同的。一些人可能会用类似的语句反对我：他们说我们训练好的带权重的大模型只用做微调就可以完成新数据集上的任务了，这样的计算成本也不会太高。也有人说人类进化了这么多年，人从出生开始，人脑就已经成为类似“带权重”的模型了，这也解释了为什么不需要过多的训练。但人脑在完成一个人之前从未尝试过的任务时（例如我们这一代是刚发明智能手机的一代，我们的所有祖先都没有“使用智能手机”的经验），我们也仍然不需要那么多的尝试就可以达到熟练的水平（例如我们可能通过简单的按钮尝试几次就会打开某个特定界面）。即使是已带有权重的大模型，微调完成类似任务仍然需要比人类多很多的尝试和反馈，这体现了大模型存在的一种数据依赖问题。我认为这种问题极大地限制了大模型的发展。</p>
+<h1 id="在一些需要保证人安全的领域，大模型无法得到信任"><a href="#在一些需要保证人安全的领域，大模型无法得到信任" class="headerlink" title="在一些需要保证人安全的领域，大模型无法得到信任"></a>在一些需要保证人安全的领域，大模型无法得到信任</h1><p>我之前研究过一段时间的自动驾驶任务，我发现自动驾驶算法难以完全落地的最主要原因是黑盒的不可解释性。目前虽然也存在一些可解释性的自动驾驶算法，但这样的算法仍然是结果导向的：它从已有的决策来解释原因。没有解决大模型不可解释的根本问题。</p>
+<p>举个例子，即使我们做大数据统计，一位司机驾驶汽车发生碰撞的概率是0.1%，而大模型自动驾驶发生碰撞的概率只有0.00001%，甚至每次大模型驾驶汽车操作时都会告诉你：我减速是因为前面有人，我转弯是因为转弯的绿灯亮了……即便如此，大部分人在选择司机时仍然会选择人类司机而非自动驾驶司机。我持这样一种观点：只有自动驾驶算法的准确率达到100%才能达到落地的标准，而算法的准确率永远也不可能达到，只要不能达到，就不能说服用户。因为人们永远不会拿自己的生命为代价来赌那万分之一甚至亿分之一的概率。只有完全保障安全性，才能让大模型发挥更广泛的作用。</p>
+<h1 id="大模型很难产生完全的自主性"><a href="#大模型很难产生完全的自主性" class="headerlink" title="大模型很难产生完全的自主性"></a>大模型很难产生完全的自主性</h1><p>人是具有很强的自主性的，他知道自己要干什么，随时会产生一些新点子。但大模型的自主性首先需要人来提供。可能有的人会说大模型目前也有类似“思维链”的形式来自动解决问题，但思维链的前提仍然是人先给予大模型一定的任务描述与需求，如果人不详细阐述自己的要求，大模型是不会主动的去做一件事的。也许可以通过一定的反馈调节让大模型达到自主的正循环过程，但这种过程会因为一定的噪声干扰而越来越偏离，最终不一定会达到很好的效果。 </p>
+<p>因此，我目前的观点是：大模型能成为很好的助手，但不能成为一个“通用”的机器人。AGI的真正实现还有很长的一段路要走。</p>
 
     </div>
 
@@ -243,7 +226,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%85%A5%E5%85%9A/" rel="tag"># 入党</a>
+              <a href="/tags/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" rel="tag"># 技术博客</a>
           </div>
 
         
@@ -252,13 +235,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/09/12/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93%E4%B8%8E%E8%AE%A1%E5%88%92/" rel="prev" title="大二下学期总结与计划">
-      <i class="fa fa-chevron-left"></i> 大二下学期总结与计划
+    <a href="/2023/12/26/2023%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE/" rel="prev" title="2023年度数据">
+      <i class="fa fa-chevron-left"></i> 2023年度数据
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/05/20/%E5%B7%A5%E7%A7%91%E5%88%9B%E8%87%B4%E8%B0%A2/" rel="next" title="工科创致谢">
-      工科创致谢 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -319,6 +299,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%98%E5%9C%A8%E5%B9%BB%E8%A7%89%EF%BC%8C%E8%BF%99%E6%98%AF%E9%9A%BE%E4%BB%A5%E5%AE%8C%E5%85%A8%E8%A7%A3%E5%86%B3%E7%9A%84"><span class="nav-number">1.</span> <span class="nav-text">大模型存在幻觉，这是难以完全解决的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%98%E5%9C%A8%E6%95%B0%E6%8D%AE%E4%BE%9D%E8%B5%96%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">大模型存在数据依赖问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E4%B8%80%E4%BA%9B%E9%9C%80%E8%A6%81%E4%BF%9D%E8%AF%81%E4%BA%BA%E5%AE%89%E5%85%A8%E7%9A%84%E9%A2%86%E5%9F%9F%EF%BC%8C%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%97%A0%E6%B3%95%E5%BE%97%E5%88%B0%E4%BF%A1%E4%BB%BB"><span class="nav-number">3.</span> <span class="nav-text">在一些需要保证人安全的领域，大模型无法得到信任</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BE%88%E9%9A%BE%E4%BA%A7%E7%94%9F%E5%AE%8C%E5%85%A8%E7%9A%84%E8%87%AA%E4%B8%BB%E6%80%A7"><span class="nav-number">4.</span> <span class="nav-text">大模型很难产生完全的自主性</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
